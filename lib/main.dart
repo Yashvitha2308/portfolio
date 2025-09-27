@@ -47,7 +47,6 @@ class HomePage extends StatelessWidget {
                   style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold)),
               const SizedBox(height: 30),
 
-              // ---------- Row 1: About + Skills ----------
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -63,7 +62,6 @@ class HomePage extends StatelessWidget {
 
               const SizedBox(height: 20),
 
-              // ---------- Row 2: Projects + Contact ----------
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -136,9 +134,9 @@ class SkillsPage extends StatelessWidget {
                 runSpacing: 10,
                 children: skills
                     .map((skill) => Chip(
-                  label: Text(skill),
-                  backgroundColor: Colors.teal.shade50,
-                ))
+                          label: Text(skill),
+                          backgroundColor: Colors.teal.shade50,
+                        ))
                     .toList(),
               ),
               const SizedBox(height: 20),
@@ -165,21 +163,21 @@ class ProjectsPage extends StatelessWidget {
           padding: EdgeInsets.all(16),
           child: Column(
             mainAxisSize: MainAxisSize.min,
-            children:  [
+            children: [
               ProjectCard(
                 title: "Text Summarization",
                 description:
-                "ML project using Pegasus and GPT-2 for summarizing text.",
+                    "ML project using Pegasus and GPT-2 for summarizing text.",
               ),
               ProjectCard(
                 title: "Energy Consumption Prediction",
                 description:
-                "ML project using Random Forest & XGBoost for forecasting energy usage.",
+                    "ML project using Random Forest & XGBoost for forecasting energy usage.",
               ),
               ProjectCard(
                 title: "Mammas Monitor",
                 description:
-                "Web project for easy interaction between doctors and pregnant women.",
+                    "Web project for easy interaction between doctors and pregnant women.",
               ),
               SizedBox(height: 20),
             ],
@@ -203,10 +201,10 @@ class ContactPage extends StatelessWidget {
     return Scaffold(
       body: const Center(
         child: Padding(
-          padding:  EdgeInsets.all(16),
+          padding: EdgeInsets.all(16),
           child: Column(
             mainAxisSize: MainAxisSize.min,
-            children:  [
+            children: [
               Text("📧 Email: yashvithakomati2007@gmail.com"),
               SizedBox(height: 8),
               Text("🔗 GitHub: github.com/Yashvitha2308"),
